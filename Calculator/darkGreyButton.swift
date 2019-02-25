@@ -9,13 +9,17 @@
 import UIKit
 
 class darkGreyButton: UIButton {
-
-    /*
-    // Only override draw() if you perform custom drawing.
-    // An empty implementation adversely affects performance during animation.
+    
     override func draw(_ rect: CGRect) {
-        // Drawing code
+        self.layer.cornerRadius = self.bounds.size.width / 2.0
+        self.clipsToBounds = true
     }
-    */
+    
+    override open var isHighlighted: Bool {
+        didSet {
+            backgroundColor = isHighlighted ? Colors.darkGrayTapped : Colors.darkGray
+        }
+    }
+
 
 }
