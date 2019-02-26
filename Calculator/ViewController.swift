@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     lazy var computedValue      : String = ""
     lazy var mathOperator       : String = ""
     lazy var mathOperatorActive = false
+    lazy var clear : Bool = true
     // Variables for UI
     var topConstraint :    CGFloat = 0.0
     var buttonSpacing       :    CGFloat = 10.0
@@ -76,7 +77,8 @@ class ViewController: UIViewController {
         
         let longpressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longpressed))
         textView.addGestureRecognizer(longpressGestureRecognizer)
-      
+        
+        //print(Device.type)
         
         let view = UIView()
         view.backgroundColor = .black
@@ -92,7 +94,7 @@ class ViewController: UIViewController {
     }
     
     @objc func longpressed() {
-        print("longpressed")
+        print("longpressssssed")
         textView.selectAll(self)
     }
     
@@ -120,8 +122,6 @@ class ViewController: UIViewController {
             print("did the math: \(computedValue)")
         }
     }
-    
-    var clear : Bool = true
     
     func clearState() {
         if clear == false {

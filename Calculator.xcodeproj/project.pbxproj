@@ -65,15 +65,23 @@
 				2649A737221F085E00E2859B /* AppDelegate.swift */,
 				2649A739221F085E00E2859B /* ViewController.swift */,
 				26520F312223102800BC6F71 /* DeviceIdentifier.swift */,
-				26520F2B2222E61000BC6F71 /* lightGrayButton.swift */,
-				26520F2D2222E62300BC6F71 /* darkGreyButton.swift */,
-				26520F2F2222E64100BC6F71 /* orangeButton.swift */,
+				266EB4AE2225532E006F2DBA /* Button Classes */,
 				26520F332223130F00BC6F71 /* GlobalVars.swift */,
 				2649A73E221F086000E2859B /* Assets.xcassets */,
 				2649A740221F086000E2859B /* LaunchScreen.storyboard */,
 				2649A743221F086000E2859B /* Info.plist */,
 			);
 			path = Calculator;
+			sourceTree = "<group>";
+		};
+		266EB4AE2225532E006F2DBA /* Button Classes */ = {
+			isa = PBXGroup;
+			children = (
+				26520F2B2222E61000BC6F71 /* lightGrayButton.swift */,
+				26520F2D2222E62300BC6F71 /* darkGreyButton.swift */,
+				26520F2F2222E64100BC6F71 /* orangeButton.swift */,
+			);
+			path = "Button Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

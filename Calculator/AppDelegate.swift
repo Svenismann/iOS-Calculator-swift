@@ -16,7 +16,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         initalizeFirstControler()
-        print("\(UIDevice().type.rawValue)")
+        //print("\(UIDevice().type.rawValue)")
+        Device.type = UIDevice().type.rawValue
+        getTopConstraintValue()
         return true
     }
     
@@ -29,6 +31,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds) // create window
         window?.rootViewController = navigationsController // set rootViewController
         window?.makeKeyAndVisible() // show the window
+    }
+    
+    func getTopConstraintValue() {
+        switch UIDevice().type.rawValue {
+            
+        case "iPhone XS Max":
+            print("X Max")
+        case "iPhone XS":
+            print("XS")
+        case "iPhone XR":
+            print("XR")
+        case "iPhone X":
+            print("X")
+        default:
+            print("16:9")
+        }
     }
 
 
