@@ -21,6 +21,6 @@ public struct Colors {
     static let orangeTapped         =    UIColor(red:0.99, green:0.78, blue:0.55, alpha:1.0)
 }
 
-public struct Device {
-    static var type : String = ""
+public struct Constraints {
+    static var top : CGFloat = 0.0
 }

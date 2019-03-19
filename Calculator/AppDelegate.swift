@@ -17,7 +17,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         initalizeFirstControler()
         //print("\(UIDevice().type.rawValue)")
-        Device.type = UIDevice().type.rawValue
+        //Device.type = UIDevice().type.rawValue
         getTopConstraintValue()
         return true
     }
@@ -46,6 +46,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             print("X")
         default:
             print("16:9")
+            Constraints.top = 120
         }
     }
 

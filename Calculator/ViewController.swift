@@ -78,7 +78,7 @@ class ViewController: UIViewController {
         let longpressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(longpressed))
         textView.addGestureRecognizer(longpressGestureRecognizer)
         
-        //print(Device.type)
+        topConstraint = Constraints.top
         
         let view = UIView()
         view.backgroundColor = .black
@@ -398,7 +398,7 @@ class ViewController: UIViewController {
         textView.translatesAutoresizingMaskIntoConstraints = false
         textView.leadingAnchor.constraint(equalTo: view.leadingAnchor, constant: 20).isActive = true
         textView.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -20).isActive = true
-        textView.topAnchor.constraint(equalTo: view.topAnchor, constant: 100).isActive = true
+        textView.topAnchor.constraint(equalTo: view.topAnchor, constant: topConstraint).isActive = true
         textView.heightAnchor.constraint(equalToConstant: 80).isActive = true
     }
     
